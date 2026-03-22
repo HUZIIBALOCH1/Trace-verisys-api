@@ -20,8 +20,8 @@ export default async function handler(req, res) {
   const { number } = req.query;
 
   // Custom Branding Variables
-  const DEVELOPER_NAME = "HUZII BALOCH OWNER OF BLACK WORLD 03058190234";
-  const PREMIUM_MSG = "premium data ke price 100 hey contact owner = HUZII X HACKER 03058190234";
+  const DEVELOPER_NAME = "TRACE VERISYS";
+  const PREMIUM_MSG = "Data not available contact admin for premium detail";
 
   if (!number) {
     return res.status(400).json({ 
@@ -35,7 +35,7 @@ export default async function handler(req, res) {
     // 3. External API Call
     // External API shayad abhi bhi 'num' mangti ho, isliye humara 'number' wahan 'num' ban kar jayega
     const API_TOKEN = 'fcca676bd5a8c852a4bd7ad9916e5c91445783b359aaeefc64fc58089a210580';
-    const API_URL = `https://shadowdatabase.site/api.php?token=${API_TOKEN}&num=${number}`;
+    const API_URL = `https://blacksimdetail.vercel.app/public_apis/simdetailsapi.php?number=${number}`;
 
     const response = await fetch(API_URL);
 
