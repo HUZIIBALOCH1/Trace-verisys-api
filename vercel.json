@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/private_apis/simdetailsapi.php",
+      "destination": "/api/index.js"
+    }
+  ]
+}
